@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap');
+html,body{
+  height: 100%;
+  width: 100%;
+
+}
+#root{
+  height: inherit;
+}
+.App {
+  text-align: center;
+  
+  font-family: 'Montserrat';
+  height: inherit;
+  overflow-y: hidden;
+  
+}
+.divisioncont{
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  position: absolute;
+  top: 0%;
+  transition: top .5s ease-in;
+  z-index: 1;
+}
+.division h1,p{
+  position: absolute;
+}
+.division p{
+  text-align:left;
+  margin: 0;
+  width: 50%;
+  opacity: 1;
+  color: white;
+  background-color: #8080802f;
+  padding: 20px;
+  top:-100%;
+  transition: top .5s ease;
+}
+.division h1{
+  margin: 0;
+  color: white;
+  top: 80%;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to left,#80808015,#80808010,#80808062,#000000 110%);
+  background-size: 400% 400%;
+  transition: font-size .5s ease-in-out;
+}
+
+.images{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.images > div{
+  flex: 1;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+}
+
+.images > div:nth-of-type(2){
+  align-self:flex-end;
+}
+
+.images div div{
+  text-align: justify;
+  background-color: peachpuff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 80%;
+  top: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+
+.division{
+  
+  flex: 1;
+  background-color: #21325E;
+  height: 100%;
+  border-right: solid #142a63 1px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.division:nth-of-type(2) video{
+  
+}
+.bookmark{
+  position: absolute;
+  top: 50%;
+  
+  right: 0;
+  transition: width 5s ease-in;
+}
+.bookmark:hover{
+  width: 20%;
+}
+.bookmark > div{
+  border: solid black 2px;
+  margin-top: 50px;
+  padding:  20px;
+  
+}
+
+.bookmark > div:hover{
+  background-color: #000000a6;
+}
+.division:hover{
+  background-color: #3E497A;
+}
+
+.definition{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  
+}
+.definition canvas{
+  height: 100%;
+  width: 100%;
+}
+
+.block{
+  font-family: 'Montserrat';
+
+}
+.block button{
+  position:absolute;
+  
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  
+}
