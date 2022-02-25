@@ -31,6 +31,7 @@ html,body{
   text-align:left;
   margin: 0;
   width: 50%;
+  font-size: larger;
   opacity: 1;
   color: white;
   background-color: #8080802f;
@@ -78,6 +79,7 @@ html,body{
   top: 100%;
   z-index: 0;
   position: absolute;
+  color:rgb(245, 119, 9);
 }
 
 
@@ -105,14 +107,17 @@ html,body{
   width: 20%;
 }
 .bookmark > div{
-  border: solid black 2px;
+  
   margin-top: 50px;
   padding:  20px;
+  background-color: #C84B31;
   
 }
 
 .bookmark > div:hover{
-  background-color: #000000a6;
+  background-color: #ca2c0d;
+  color: white;
+  opacity: 0.2;
 }
 .division:hover{
   background-color: #3E497A;
@@ -121,14 +126,38 @@ html,body{
 .definition{
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-image: url('./assets/Space_1.png') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   
 }
 .definition canvas{
   height: 100%;
   width: 100%;
 }
-
+.meaning p{
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.479);
+  top: 25%;
+  left: 3%;
+  text-align: justify;
+  font-size: 1.3em;
+  color:white;
+  padding: 20px;
+}
+.meaning div p{
+  background-color: rgba(255, 255, 255, 0.479);
+  position: absolute;
+  width: 20%;
+  padding: 20px;
+  top: 30%;
+  left: 50%;
+  color:white;
+  display: none;
+  border-radius: 5px;
+}
 .block{
   font-family: 'Montserrat';
 
@@ -144,4 +173,44 @@ html,body{
   border: none;
   font-size: 20px;
   
+}
+.effects{
+  height:100%;
+}
+
+.meaning h1{
+  margin: 0;
+  position: absolute;
+  height: 15%;
+  font-size: 4em;
+  color: white;
+  top: 85%;
+  padding-left: 20px;
+}
+.minigame{
+  position:relative;
+  background-image: url('./assets/back.png');
+}
+.popup{
+  font-family:cursive;
+  font-size:x-large;
+  padding: 20px;
+  background-color: white;
+  position:absolute;
+  top: 20%;
+  left:-60%;
+  width: 50%;
+  margin: 0 auto;
+  
+  border-radius: 5px;
+  transition: left 2s ease-in;
+}
+.effects p {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.479);
+  top: 10%;
+  left: 3%;
+  text-align: justify;
+  font-size: 1.3em;
+  padding: 20px;
 }
